@@ -3,122 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praveen Dixit Tours & Travel</title>
+    <title>Mathura Vrindavan Tour Service</title>
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+        }
 
-        /* HEADER */
-        header {
-            background: #007bff;
-            padding: 15px;
-            text-align: center;
-            color: white;
-            font-size: 26px;
+        /* Navbar */
+        .navbar {
+            background: #8B0000;
+            padding: 15px 30px;
+            color: #fff;
+            font-size: 22px;
             font-weight: bold;
+            text-align: center;
         }
 
-        /* BANNER */
-        .banner {
-            width: 100%;
-            height: 220px;
-            background-image: url('https://i.ibb.co/4Jx3m84/travel-banner.jpg');
-            background-size: cover;
-            background-position: center;
+        /* Hero Section */
+        .hero {
+            background: url('https://i.ibb.co/G3Z9bgV/radha-krishna.jpg') center/cover no-repeat;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            text-shadow: 2px 2px 10px black;
         }
 
-        /* SECTIONS */
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #8B0000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #600000;
+        }
+
         .section {
-            background: white;
-            margin: 15px;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            padding: 60px 25px;
+            text-align: center;
         }
 
         .section h2 {
-            margin-top: 0;
-            color: #007bff;
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #8B0000;
         }
 
-        /* PACKAGES */
-        .package {
-            background: #f1f7ff;
+        /* Services Grid */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #8B0000;
+        }
+
+        .contact-box {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-top: 10px;
             padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
         }
 
-        .package h3 { margin: 5px 0; }
-
-        /* WHATSAPP BUTTON */
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            padding: 12px 20px;
-            color: white;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 18px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-        }
-
-        /* FOOTER */
         footer {
-            background: #007bff;
+            background: #8B0000;
+            padding: 15px;
             color: white;
-            padding: 12px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
         }
+
     </style>
 </head>
 
 <body>
 
-<header>Praveen Dixit Tour & Travel</header>
+    <div class="navbar">Mathura Vrindavan Tour Service</div>
 
-<div class="banner"></div>
-
-<!-- ABOUT -->
-<div class="section">
-    <h2>Welcome to Praveen Dixit Tours</h2>
-    <p>We provide safe, affordable and comfortable travel services for all destinations. Book your next trip with trusted service.</p>
-</div>
-
-<!-- PACKAGES -->
-<div class="section">
-    <h2>Popular Packages</h2>
-
-    <div class="package">
-        <h3>Delhi → Agra (Taj Mahal)</h3>
-        <p>₹4500 Only</p>
+    <!-- HERO -->
+    <div class="hero">
+        <div>
+            <h1>Mathura – Vrindavan Tour & Travel</h1>
+            <p>Taxi • Hotel • Guide Booking – Everything at One Place</p>
+            <button class="btn">Book Now</button>
+        </div>
     </div>
 
-    <div class="package">
-        <h3>Delhi → Jaipur</h3>
-        <p>₹5500 Only</p>
+    <!-- SERVICES -->
+    <div class="section">
+        <h2>Our Services</h2>
+
+        <div class="services">
+            <div class="card">
+                <h3>Taxi Booking</h3>
+                <p>Mathura – Vrindavan me safe & comfortable taxi service available 24×7.</p>
+            </div>
+
+            <div class="card">
+                <h3>Hotel Booking</h3>
+                <p>Best budget & luxury hotels ka booking arrangement at best prices.</p>
+            </div>
+
+            <div class="card">
+                <h3>Guide Service</h3>
+                <p>Certified local guide for Darshan, Temples & Sacred places tour.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="package">
-        <h3>Delhi Local Sightseeing</h3>
-        <p>₹2500 Full Day</p>
+    <!-- ABOUT -->
+    <div class="section" style="background:white;">
+        <h2>About Us</h2>
+        <p style="max-width: 650px; margin: auto;">
+            We provide complete Mathura & Vrindavan travel solutions including taxi, hotel 
+            and guide services. Humari team local experience ke saath aapke tour ko 
+            smooth, comfortable aur memorable banati hai.
+        </p>
     </div>
-</div>
 
-<!-- CONTACT -->
-<div class="section">
-    <h2>Contact Us</h2>
-    <p><b>Phone:</b> 9876543210</p>
-    <p><b>Email:</b> praveen@example.com</p>
-</div>
+    <!-- CONTACT -->
+    <div class="section">
+        <h2>Contact Us</h2>
 
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/919876543210" target="_blank">WhatsApp Us</a>
+        <div class="contact-box">
+            <input type="text" placeholder="Full Name">
+            <input type="number" placeholder="Phone Number">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button class="btn" style="width:100%; margin-top:15px;">Send Message</button>
+        </div>
+    </div>
 
-<footer>© 2025 Praveen Dixit Tours & Travel</footer>
+    <footer>
+        © 2025 Mathura Vrindavan Tour Service – All Rights Reserved
+    </footer>
 
 </body>
 </html>
