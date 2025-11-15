@@ -3,29 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praveen Dixit Tours</title>
+    <title>Praveen Dixit Tours & Travel</title>
+
     <style>
-        body { font-family: Arial; margin: 0; padding: 0; background: #f2f2f2; }
-        header { background: #007bff; padding: 20px; color: white; text-align: center; font-size: 24px; }
-        .box { background: white; margin: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+
+        /* HEADER */
+        header {
+            background: #007bff;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        /* BANNER */
+        .banner {
+            width: 100%;
+            height: 220px;
+            background-image: url('https://i.ibb.co/4Jx3m84/travel-banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* SECTIONS */
+        .section {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        /* PACKAGES */
+        .package {
+            background: #f1f7ff;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .package h3 { margin: 5px 0; }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            padding: 12px 20px;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #007bff;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
 
 <header>Praveen Dixit Tour & Travel</header>
 
-<div class="box">
-    <h2>Welcome!</h2>
-    <p>This is your tour website hosted on GitHub Pages.</p>
-    <p>You can add packages, photos, contact details and more.</p>
+<div class="banner"></div>
+
+<!-- ABOUT -->
+<div class="section">
+    <h2>Welcome to Praveen Dixit Tours</h2>
+    <p>We provide safe, affordable and comfortable travel services for all destinations. Book your next trip with trusted service.</p>
 </div>
 
-<div class="box">
-    <h3>Contact Us</h3>
-    <p>Phone: 9876543210</p>
-    <p>Email: praveen@example.com</p>
+<!-- PACKAGES -->
+<div class="section">
+    <h2>Popular Packages</h2>
+
+    <div class="package">
+        <h3>Delhi → Agra (Taj Mahal)</h3>
+        <p>₹4500 Only</p>
+    </div>
+
+    <div class="package">
+        <h3>Delhi → Jaipur</h3>
+        <p>₹5500 Only</p>
+    </div>
+
+    <div class="package">
+        <h3>Delhi Local Sightseeing</h3>
+        <p>₹2500 Full Day</p>
+    </div>
 </div>
+
+<!-- CONTACT -->
+<div class="section">
+    <h2>Contact Us</h2>
+    <p><b>Phone:</b> 9876543210</p>
+    <p><b>Email:</b> praveen@example.com</p>
+</div>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/919876543210" target="_blank">WhatsApp Us</a>
+
+<footer>© 2025 Praveen Dixit Tours & Travel</footer>
 
 </body>
 </html>
